@@ -9,9 +9,10 @@ function Main() {
     return (
         <React.Fragment>
             <Header />
-            <Nav />
+            {/* TODO : 인터랙션 디자인이나 무언가... 추가하기.. */}
+            {/* <Nav /> */}
             <ArtBoard />
-            <Footer />
+            {/* <Footer /> */}
         </React.Fragment>
     ); 
 }

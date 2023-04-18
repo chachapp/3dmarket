@@ -1,10 +1,12 @@
 import React from "react";
+import "../SCSS/header.scss";
 
 function Header() {
-
     return (
-        <div>
-            <h1>헤더입니다.</h1>
+        <div className="head">
+            <h1>3D MARKET</h1> 
+            <button>CART</button>
+            <button>LOGIN</button>
         </div>
     )
 }
