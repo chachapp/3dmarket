@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../SCSS/header.scss";
 
 function Header() {
@@ -6,7 +7,9 @@ function Header() {
         <div className="head">
             <h1>3D MARKET</h1> 
             <button>CART</button>
-            <button>LOGIN</button>
+            <Link to="/login">
+                <button>LOGIN</button>
+            </Link>
         </div>
     )
 }

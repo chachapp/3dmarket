@@ -1,0 +1,78 @@
+$radius: 10px;
+$margin: 8px;
+
+@mixin btnLogins ($font-size, $height, $width) {
+    font-size: $font-size;
+    height: $height;
+    width: $width;
+    border-radius: $radius;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-wrapper {
+    width: 450px;
+    height: 480px;
+    padding: 30px;
+    box-sizing: border-box;
+    font-size: 15px;
+    border: solid black 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login {
+    font-size: 28px;
+    // TODO : font 적용하기..
+}
+
+input {
+    &[type='text'] {
+        width: 100%;
+        height: 30px;
+        padding-left: 0px;
+        padding: 1px;
+        margin-bottom: $margin;
+        border-radius: 10px;
+        font-size: medium;
+    }
+
+    &[type='checkbox'] {
+        accent-color: black;
+    }
+    
+    &::placeholder {
+        color: lighten($color: dimgray, $amount: 10%);
+        padding: 5px;
+    }
+
+    &:focus {
+        outline: none;
+        background-color: darken($color: white, $amount: 3%);
+    }
+
+    &[type='submit'] {
+        @include btnLogins(17px, 35px, 100px);
+        background-color: white;
+        margin-top: 10px;
+
+        &:hover {
+            background-color: darken($color: white, $amount: 3%);
+        }
+    }
+}
+
+.btn-sign {
+    float: inherit;
+    margin-left: 5px;
+    @include btnLogins(17px, 35px, 100px);
+
+   
+}
+
