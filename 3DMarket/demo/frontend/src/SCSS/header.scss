@@ -1,20 +1,35 @@
 $radius: 70px;
 
-.head {
+.header-container {
     margin: auto 0;
    // background-color: orange;
     border: 1em;
     display: flex;
-    align-items: center;
-    flex: 1;
-    // border-bottom: 1px solid black;
+    //align-items: center;
+    //flex-direction: inherit;
+    width: 100%;
+    // border: 1px solid black;
+    justify-content: space-between;
+
+    ::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+     
 }
 
-h1 {
-    float: left;
-    flex: 1;
+.header-title {
     margin-left: 10px auto;
-    font-size: 3rem;
+    font-size: 1em;
+    display: flex;
+    
+}
+
+
+.header-items {
+    display: flex;
+    align-items: center;
 }
 
 button {
@@ -23,7 +38,7 @@ button {
     width: 80px;
     border-radius: $radius;
     font-size: 100%;
-    float: right;
+   // float: right;
     margin: 1px;
     cursor: pointer;
     text-align: center;
