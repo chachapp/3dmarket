@@ -1,3 +1,31 @@
 .art-box {
-    display: flex;
+    
+    justify-content: space-between;
+    border: 1px solid black;
+    margin: 1em;
+    //width: 300px;
+     // padding: 5px;
+    width: 250px;
+    //height: 100%;//450px;
+
+    text-align: center;
+    
+    .art-thumbnail {
+        width: 100%;
+        //height: auto;
+        text-align: center;
+    }
+
+    .art-desc {
+        // padding: 10px;
+        text-align: center;
+        // white-space: inherit;
+    }
+
+}
+
+.heartIcon {
+    width: calc(100vw * (24 / 1920));
+    height: calc(100vw * (24 / 1920));
+    margin-bottom: 10px;
 }

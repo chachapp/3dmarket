@@ -1,0 +1,8 @@
+.art-board {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:  space-between;
+    // align-content: space-around;
+    border: 1px solid black;
+}

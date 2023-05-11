@@ -66,16 +66,16 @@ input {
 
     &:focus {
         outline: none;
-        background-color: darken($color: white, $amount: 3%);
+        background-color: darken($color: transparent, $amount: 3%);
     }
 
     &[type='submit'] {
         @include btnLogins(17px, 35px, 100px);
-        background-color: white;
+        background-color: transparent;
         margin-top: 10px;
 
         &:hover {
-            background-color: darken($color: white, $amount: 3%);
+            background-color: darken($color: transparent, $amount: 3%);
         }
     }
 }

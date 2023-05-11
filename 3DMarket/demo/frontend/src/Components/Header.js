@@ -18,6 +18,9 @@ function Header({ isRequired }) {
           <Link to="/login">
             <button>LOGIN</button>
           </Link>
+          <Link to="/register">
+            <button>SIGN UP</button>
+          </Link>
         </div>
       )}
     </div>

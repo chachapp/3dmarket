@@ -42,10 +42,10 @@ button {
     margin: 1px;
     cursor: pointer;
     text-align: center;
-    background-color: white;
+    background-color: transparent;
 
     &:hover {
-        background-color: darken($color: white, $amount: 3%);
+        background-color: darken($color: transparent, $amount: 5%);
     }
 }
 
