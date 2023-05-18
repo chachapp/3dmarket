@@ -6,7 +6,7 @@ function Header({ isRequired }) {
   return (
     <div className="header-container">
       <div className="header-title">
-        <Link to="/">
+        <Link to="/" style={{ textDecoration: "none", color: "black" }}>
           <h1>3D MARKET</h1>
         </Link>
       </div>

@@ -48,7 +48,7 @@ function Register() {
               required
             ></input>
             <input type="text" name="userPhone" placeholder="PHONE"></input>
-            <input type="submit" value="Submit" />
+            <input type="submit" value="회원가입" />
           </form>
         </div>
       </div>

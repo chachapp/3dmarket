@@ -1,15 +1,21 @@
 $radius: 70px;
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
 .header-container {
-    margin: auto 0;
-   // background-color: orange;
+    color: white;
+    margin: auto;
+    margin-bottom: 1em;
+    //background-color: black;
     border: 1em;
     display: flex;
     //align-items: center;
     //flex-direction: inherit;
     width: 100%;
-    // border: 1px solid black;
     justify-content: space-between;
+    //border: 1px solid black;
+    //border-radius: 20px;
+    
 
     ::after{
         content: "";
@@ -20,29 +26,34 @@ $radius: 70px;
 }
 
 .header-title {
+    color: white;
     margin-left: 10px auto;
+    font-family: 'Raleway', sans-serif;
     font-size: 1em;
     display: flex;
-    
+    color: white;
 }
 
 
 .header-items {
     display: flex;
     align-items: center;
+ 
 }
 
 button {
-    box-sizing: border-box;
+    // box-sizing: border-box;
     height: 40px;
     width: 80px;
     border-radius: $radius;
     font-size: 100%;
    // float: right;
     margin: 1px;
+    border: 2px solid black;
     cursor: pointer;
     text-align: center;
     background-color: transparent;
+    //color: white;
 
     &:hover {
         background-color: darken($color: transparent, $amount: 5%);

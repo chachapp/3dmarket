@@ -13,6 +13,7 @@ function Main() {
       <Nav />
       <ArtBoard />
       {/* <Footer /> */}
+      <Footer />
     </React.Fragment>
   );
 }
